@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+//class Dog{
+//    std::string m_name;
+//    int m_age;
+//public:
+//    Dog(std::string name,int age){
+//        this -> m_name = name;
+//        this -> m_age = age;
+//    }
+//    ~Dog(){
+//        cout << "destructor" << "\t";
+//    }
+//   static int  print(){
+//       cout << "hello" << "\t";
+//    }
+//};
+struct Human{
+    int age;
+    double height;
+    std::string name;
+};
+void print(Human a){
+    cout << a.age << "\n"<< a.name << "\n"<< a.height << "\n";
+}
+int main() {
+//    Dog dog("jeko",10);
+//    int age = dog.print();
+    Human jhon;
+    jhon.height = 15.2;
+    jhon.name = "jhon";
+    jhon.age = 15;
+    print(jhon);
+    return 0;
+}
